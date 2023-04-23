@@ -1,20 +1,13 @@
 // Standaard reset voor overbodige wirtuimtes
-
-// gebruikt
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-// gebruikt
-
 html {
   font-family: "Work Sans", sans-serif;
 }
-
-// gebruikt
 
 body {
   margin: 0;
@@ -24,8 +17,6 @@ body {
   background-attachment: fixed;
   color: white;
 }
-
-// gebruikt
 
 h1 {
   display: flex;
@@ -37,32 +28,26 @@ h1 {
   margin: 0;
 }
 
-// gebruikt
-
 h1 > span {
   font-size: 50%;
 }
-
-// gebruikt
 
 img {
   max-width: 100%;
   object-fit: cover;
 }
 
-// gebruikt
-
 .text--center {
   text-align: center;
 }
-
-// gebruikt
 
 .container {
   max-width: 75rem;
   width: 100%;
   margin-inline: auto;
 }
+
+// Alles hierboven al gebruikt in codepen
 
 .game {
   height: 100vh;
