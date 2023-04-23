@@ -20,66 +20,61 @@ for (let i = 1; i <= spelerLeven; i++) {
 
 // Eerste stap: alle elementeren selecteren en aanspreken 
 
-const keuzeSpeler = document.getElementById("keuzeSpeler");
-const keuzeComputer = document.getElementById("keuzeComputer");
-const btnBlad = document.getElementById("btnBlad");
-const btnSteen = document.getElementById("btnSteen");
-const btnSchaar = document.getElementById("btnSchaar");
-const btnReset = document.getElementById("btnReset");
+// let spelerNaam = prompt('Wat is jouw naam?');
+// document.getElementById('spelerNaam').innerHTML = spelerNaam;
 
-btnBlad.addEventListener('click', () => {
-  spelerWapen = keuzes[0];
+const keuzeSpeler = document.getElementById('keuzeSpeler');
+const keuzeComputer = document.getElementById('keuzeComputer');
+const btnBlad = document.getElementById('btnBlad');
+const btnSteen = document.getElementById('btnSteen');
+const btnSchaar = document.getElementById('btnSchaar');
+const btnReset = document.getElementById('btnReset');
+
+btnSteen.addEventListener('click', () => progressGame(1));
+
+btnSchaar.addEventListener('click', () => progressGame(2));
+
+const progressGame = (spelerKeuze) => {
+  spelerWapen = keuzes[spelerKeuze];
   computerWapen = keuzes[Math.floor(Math.random() * keuzes.length)];
   keuzeSpeler.innerHTML = `<img src="img/${spelerWapen}.png" alt="${spelerWapen}" class="speler__keuze__afbeelding">`;
   keuzeComputer.innerHTML = `<img src="img/${computerWapen}.png" alt="${computerWapen}" class="speler__keuze__afbeelding">`;
   bladSteenSchaar(spelerWapen, computerWapen);
   game++;
-});
-
-btnSteen.addEventListener('click', () => {
-  spelerWapen = keuzes[1];
-  computerWapen = keuzes[Math.floor(Math.random() * keuzes.length)];
-  keuzeSpeler.innerHTML = `<img src="img/${spelerWapen}.png" alt="${spelerWapen}" class="speler__keuze__afbeelding">`;
-  keuzeComputer.innerHTML = `<img src="img/${computerWapen}.png" alt="${computerWapen}" class="speler__keuze__afbeelding">`;
-  bladSteenSchaar(spelerWapen, computerWapen);
-  game++;
-});
-
-btnSchaar.addEventListener('click', () => {
-  spelerWapen = keuzes[2];
-  computerWapen = keuzes[Math.floor(Math.random() * keuzes.length)];
-  keuzeSpeler.innerHTML = `<img src="img/${spelerWapen}.png" alt="${spelerWapen}" class="speler__keuze__afbeelding">`;
-  keuzeComputer.innerHTML = `<img src="img/${computerWapen}.png" alt="${computerWapen}" class="speler__keuze__afbeelding">`;
-  bladSteenSchaar(spelerWapen, computerWapen);
-  game++;
-});
-
+}
 
 const refreshGame = () => {
   game = 0;
-  spelerLeven = 3;
-  computerLeven = 3;
+  spelerLeven = 5;
+  computerLeven = 5;
 }
 
 btnReset.addEventListener("click", refreshGame());
 
 // Dit zelf laten toevoegen door speler 
 
+// const bladSteenSchaar = (speler, computer) => {
+//   console.log(speler, computer, game)
+//   if (speler === computer) {
+//     console.log('draw');
+//   } else if (speler === 'papier' && computer === 'steen') {
+//     computerLeven--;
+//     computerLevenEl.innerHTML = computerLeven;
+//   } else if (speler === 'steen' && computer === 'schaar') {
+//     computerLeven--;
+//     computerLevenEl.innerHTML = computerLeven;
+//   } else if (speler === 'schaar' && computer === 'papier') {
+//     computerLeven--;
+//     computerLevenEl.innerHTML = computerLeven;
+//   } else {
+//     spelerLeven--;
+//     spelerLevenEl.innerHTML = spelerLeven;
+//   }
+// }
+
 const bladSteenSchaar = (speler, computer) => {
-  console.log(speler, computer, game)
-  if (speler === computer) {
-    console.log('draw');
-  } else if (speler === 'papier' && computer === 'steen') {
-    computerLeven--;
-    computerLevenEl.innerHTML = computerLeven;
-  } else if (speler === 'steen' && computer === 'schaar') {
-    computerLeven--;
-    computerLevenEl.innerHTML = computerLeven;
-  } else if (speler === 'schaar' && computer === 'papier') {
-    computerLeven--;
-    computerLevenEl.innerHTML = computerLeven;
-  } else {
-    spelerLeven--;
-    spelerLevenEl.innerHTML = spelerLeven;
-  }
+  speler === computer ? console.log('draw') :
+  speler === 'papier' && computer === 'steen' || speler === 'steen' && computer === 'schaar' || speler === 'schaar' && computer === 'papier' ? (computerLeven--, computerLevenEl.innerHTML = computerLeven) :
+  (spelerLeven--, spelerLevenEl.innerHTML = spelerLeven);
 }
+
