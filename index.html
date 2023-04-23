@@ -14,58 +14,64 @@
   </head>
   <body>
     <div class="container">
-      <!-- Hier komt je HTML-code -->
 
-      <!-- Titel -->
-      <h1>Blad, Steen, Schaar <span id="fire">🔥</span></h1>
+      <div class="game">
 
-      <!-- Het speelveld -->
-      <div class="speelveld">
-        <!-- De speler zelf -->
-        <div class="speler" id="jij">
-          <h2 class="speler__naam " id="spelerNaam">Speler</h2>
-          <div class="speler__keuze" id="keuzeSpeler"></div>
-          <div id="spelerLeven" class="speler__levens"></div>
+        <!-- Hier komt je HTML-code -->
+
+        <!-- Titel -->
+        <h1>Blad, Steen, Schaar <span id="fire">🔥</span></h1>
+
+        <!-- Het speelveld -->
+        <div class="speelveld">
+          <!-- De speler zelf -->
+          <div class="speler" id="jij">
+            <h2 class="speler__naam " id="spelerNaam">Speler</h2>
+            <div class="speler__keuze" id="keuzeSpeler"></div>
+            <div id="spelerLeven" class="speler__levens"></div>
+          </div>
+
+          <!-- Versus -->
+          <p class="versus">VS</p>
+
+          <!-- De computer -->
+          <div class="speler" id="computer">
+            <h2 class="speler__naam">Slimste AI</h2>
+            <div class="speler__keuze" id="keuzeComputer"></div>
+            <div id="computerLeven" class="speler__levens"></div>
+          </div>
         </div>
 
-        <!-- Versus -->
-        <p class="versus">VS</p>
-
-        <!-- De computer -->
-        <div class="speler" id="computer">
-          <h2 class="speler__naam">Slimste AI</h2>
-          <div class="speler__keuze" id="keuzeComputer"></div>
-          <div id="computerLeven" class="speler__levens"></div>
-        </div>
-      </div>
-
-      <!-- Hier komt de code voor de keuze van blad, steen of schaar -->
-      <div class="keuze-wrapper">
-        <div>
-          <span>
-            <h2 class="text--center">Kies je wapen!</h2>
-            <button class="btnReset" id="btnReset">of reset</button>
-          </span>
-          <div class="keuzes" id="keuzes">
-            <button id="btnBlad">
-              <img src="img/papier.png" alt="Blad">
-            </button>
-            <button id="btnSteen">
-              <img src="img/steen.png" alt="Steen">
-            </button>
-            <button id="btnSchaar">
-              <img src="img/schaar.png" alt="Schaar">
-            </button>
+        <!-- Hier komt de code voor de keuze van blad, steen of schaar -->
+        <div class="keuze-wrapper">
+          <div>
+            <span>
+              <h2 class="text--center">Kies je wapen!</h2>
+              <button class="btnReset" id="btnReset">of reset</button>
+            </span>
+            <div class="keuzes" id="keuzes">
+              <button id="btnBlad">
+                <img src="img/papier.png" alt="Blad">
+              </button>
+              <button id="btnSteen">
+                <img src="img/steen.png" alt="Steen">
+              </button>
+              <button id="btnSchaar">
+                <img src="img/schaar.png" alt="Schaar">
+              </button>
+            </div>
+            <!-- Winner or loser -->
+            <div class="winner-loser">
+              <p id="spelerWin" class="hidden">JIJ WINT! 🥳</p>
+              <p id="computerWin" class="hidden">Je verliest... 😞</p>
+              <p id="fireWin" class="hidden">NATUURLIJK! Vuur wint van alles! 🤯</p>
+            </div>
           </div>
-          <!-- Winner or loser -->
-          <div class="winner-loser">
-            <p id="spelerWin" class="hidden">JIJ WINT! 🥳</p>
-            <p id="computerWin" class="hidden">Je verliest... 😞</p>
-            <p id="fireWin" class="hidden">NATUURLIJK! Vuur wint van alles! 🤯</p>
-          </div>
+          
         </div>
         
       </div>
+
     </div>
 
     <!-- Scripts hier toevoegen-->
