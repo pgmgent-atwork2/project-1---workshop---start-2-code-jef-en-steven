@@ -4,12 +4,17 @@
   padding: 0;
 }
 
+/*
+  "Sitka Display", serif;
+  "Work Sans", sans-serif;
+*/
+
 html {
-  --font-sitka-display: "Sitka Display", serif;
-  --font-family_work-sans: "Work Sans", sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 body {
   background-color: black;
   color: white;
 }
+
