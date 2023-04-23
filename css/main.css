@@ -21,14 +21,21 @@
   --bolder: 600;
   --lighter: 200;
 
-  // --font-family_sitka-display: 'Sitka Display', serif;
-  // --font-family_work-sans: 'Work Sans', sans-serif;
+  --font-family_sitka-display: "Sitka Display", serif;
+  --font-family_work-sans: "Work Sans", sans-serif;
 }
 
 body {
   background-color: var(--black);
   color: var(--white);
+  font-family: var(--font-family_work-sans);
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family_sitka-display);
 }
