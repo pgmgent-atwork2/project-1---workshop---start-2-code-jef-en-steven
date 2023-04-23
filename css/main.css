@@ -17,7 +17,12 @@ html {
 
 body {
   margin: 0;
-  background-color: #ff7f49;
+  height: 100vh;
+  display:  flex;
+  justify-content: center;
+  align-items: center;
+  background: #FF7F49;
+  background: linear-gradient(180deg, #FF7F49 0%, #EB6276 100%);
   color: white;
 }
 
@@ -25,6 +30,7 @@ h1 {
   text-align: center;
   font-size: 50px;
   text-transform: uppercase;
+  margin: 0;
 }
 
 img {
@@ -55,26 +61,26 @@ img {
   gap: 20px;
 }
 
-.speler__levens {
-  display: flex;
-  justify-content: space-evenly;
+.speler__naam {
+  margin-bottom: 0;
 }
 
-.speler__levens > div {
-  width: 50px;
-  height: 50px;
+.speler__levens {
+  display: flex;
+  gap: 10px;
+}
+
+.speler__leven {
+  width: 30px;
+  height: 30px;
   background-color: #49ff7f;
   border-radius: 8px;
 }
 
-.speler__levens > div.leven__kwijt {
-  background-color: #ff496e;
-}
-
 .speler__keuze {
   background-color: #ffffff;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   padding: 20px;
   display: flex;
   justify-content: center;
