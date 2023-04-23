@@ -1,3 +1,14 @@
+// Standaard reset voor overbodige wirtuimtes
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  --font-sitka-display: "Sitka Display", serif;
+  --font-family_work-sans: "Work Sans", sans-serif;
+}
+
 body {
   background-color: black;
   color: white;
