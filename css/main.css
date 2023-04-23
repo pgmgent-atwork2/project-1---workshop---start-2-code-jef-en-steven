@@ -2,9 +2,11 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /*
+  fonts: 
   "Sitka Display", serif;
   "Work Sans", sans-serif;
 */
@@ -14,7 +16,138 @@ html {
 }
 
 body {
-  background-color: black;
+  margin: 0;
+  background-color: #ff7f49;
   color: white;
 }
 
+h1 {
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.text--center {
+  text-align: center;
+}
+
+.container {
+  max-width: 75rem;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.speelveld {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.speler {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.speler__levens {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.speler__levens > div {
+  width: 50px;
+  height: 50px;
+  background-color: #49ff7f;
+  border-radius: 8px;
+}
+
+.speler__levens > div.leven__kwijt {
+  background-color: #ff496e;
+}
+
+.speler__keuze {
+  background-color: #ffffff;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.speler__keuze__afbeelding {
+  min-width: 100px;
+  min-height: 100px;
+}
+
+.versus {
+  font-size: 50px;
+  font-weight: 900;
+  margin-top: 200px;
+}
+
+.keuze-wrapper {
+  margin-top: 50px;
+}
+
+.keuzes {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+button {
+  cursor: pointer;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  padding: 8px;
+}
+
+button:hover {
+  outline: #fc4b00 solid 4px;
+}
+
+.btnReset {
+  background-color: white;
+  color: #fc4b00;
+  font-weight: 900;
+  font-size: 20px;
+  padding: 10px 20px;
+  margin: 0 20px;
+  border-radius: 8px;
+}
+
+span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* Tutorial CSS */
+
+.img__tutorial {
+  height: 400px;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #49ff7f;
+  text-decoration: underline;
+}

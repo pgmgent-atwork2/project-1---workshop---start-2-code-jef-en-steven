@@ -1,0 +1,29 @@
+// Standaard reset voor overbodige wirtuimtes
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*
+  fonts: 
+  "Sitka Display", serif;
+  "Work Sans", sans-serif;
+*/
+
+html {
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  width: 75rem;
+  background-color: blue;
+}
+
