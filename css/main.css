@@ -1,28 +1,31 @@
 // Standaard reset voor overbodige wirtuimtes
+
+// gebruikt
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*
-  fonts: 
-  "Sitka Display", serif;
-  "Work Sans", sans-serif;
-*/
+// gebruikt
 
 html {
   font-family: "Work Sans", sans-serif;
 }
 
+// gebruikt
+
 body {
   margin: 0;
   height: 100vh;
-  background: #FF7F49;
-  background: linear-gradient(180deg, #FF7F49 0%, #EB6276 100%);
+  background: #ff7f49;
+  background: linear-gradient(180deg, #ff7f49 0%, #eb6276 100%);
   background-attachment: fixed;
   color: white;
 }
+
+// gebruikt
 
 h1 {
   display: flex;
@@ -34,18 +37,26 @@ h1 {
   margin: 0;
 }
 
+// gebruikt
+
 h1 > span {
   font-size: 50%;
 }
+
+// gebruikt
 
 img {
   max-width: 100%;
   object-fit: cover;
 }
 
+// gebruikt
+
 .text--center {
   text-align: center;
 }
+
+// gebruikt
 
 .container {
   max-width: 75rem;
