@@ -60,13 +60,13 @@ const vooruitgang = (spelerKeuze) => {
 const bladSteenSchaar = (speler, computer) => {
   if (speler === computer) {
     return;
-  } else if (speler === 'papier' && computer === 'steen') {
+  } else if (speler === 'blad' && computer === 'steen') {
     computerLeven--;
     computerLevenEl.innerHTML = computerLeven;
   } else if (speler === 'steen' && computer === 'schaar') {
     computerLeven--;
     computerLevenEl.innerHTML = computerLeven;
-  } else if (speler === 'schaar' && computer === 'papier') {
+  } else if (speler === 'schaar' && computer === 'blad') {
     computerLeven--;
     computerLevenEl.innerHTML = computerLeven;
   } else {
@@ -117,6 +117,6 @@ btnReset.addEventListener("click", resetGame);
 
 // const bladSteenSchaar = (speler, computer) => {
 //   speler === computer ? console.log('draw') :
-//   speler === 'papier' && computer === 'steen' || speler === 'steen' && computer === 'schaar' || speler === 'schaar' && computer === 'papier' ? (computerLeven--, computerLevenEl.innerHTML = computerLeven) :
+//   speler === 'blad' && computer === 'steen' || speler === 'steen' && computer === 'schaar' || speler === 'schaar' && computer === 'blad' ? (computerLeven--, computerLevenEl.innerHTML = computerLeven) :
 //   (spelerLeven--, spelerLevenEl.innerHTML = spelerLeven);
 // }
