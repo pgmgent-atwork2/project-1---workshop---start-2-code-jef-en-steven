@@ -1,24 +1,27 @@
-# Start to code
+# Workshop tutorial - Start to code
 
-## FigJam file
+## Description
+
+On behalf of the Arteveldehogeschool, we created a game for the @Work2 class to motivate external students to learn to code.
+
+The idea was to give pupils or future students who have no prior knowledge of code an instructive but fun interactive introduction.
+
+The project consists of a working game and a tutorial that explains everything step by step.
+
+## Link to FigJam file
 
 [FigJam](https://www.figma.com/file/U0VftTNYqzIm5UhuKqzKTV/Untitled?node-id=0%3A1&t=oMIqF6MbmuUgoG7H-1).
 
-## Toelichting van het project
+## Structure of the game
 
-### Bedoeling
-
-Het is de bedoeling van dit project om beginnende programmeurs of geïnteresseerden extra zin te geven om zich toe te wijden aan de wondere wereld van de code.
-We geven startcode mee waarna we via een tutorial extra informatie, code en tips geven om een werkende "blad-steen-schaar" game te spelen.
-
-### Opbouw
-
-De app is opgebouwd uit de meest simpele structuur die een statische website kan hebben:
+The app is built from the most straightforward structure a static website can have:
 
 - index.html
-- css
-- js
+- CSS
+- JS
 
-### Auteurs
+Basic JavaScript is used to make the game functional.
+
+## Credits
 
 Jef De Niel en Steven Aelbrecht
