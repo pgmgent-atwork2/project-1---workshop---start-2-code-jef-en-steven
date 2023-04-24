@@ -94,6 +94,8 @@ function verberg_keuzes() {
 function reset_het_spel() {
   speler_levens = speler_levens_voor_reset;
   computer_levens = computer_levens_voor_reset;
+  speler_keuze.innerHTML = null;
+  computer_keuze.innerHTML = null;
   speler_levens_element.innerHTML = toon_levens(speler_levens);
   computer_levens_element.innerHTML = toon_levens(computer_levens);
   speler_wint.classList.add('hidden');
