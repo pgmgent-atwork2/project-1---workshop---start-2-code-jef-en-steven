@@ -1,16 +1,14 @@
-// Standaard reset voor overbodige wirtuimtes
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
   font-family: "Work Sans", sans-serif;
+  font-size: 20px;
 }
 
 body {
-  margin: 0;
   height: 100vh;
   background: #ff7f49;
   background: linear-gradient(180deg, #ff7f49 0%, #eb6276 100%);
@@ -25,11 +23,24 @@ h1 {
   gap: 10px;
   font-size: 50px;
   text-transform: uppercase;
-  margin: 0;
+  margin-bottom: 1rem;
 }
 
 h1 > span {
   font-size: 50%;
+}
+
+h2 {
+  text-align: left;
+  font-size: 30px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+a {
+  text-decoration: none;
+  color: #49ff7f;
+  text-decoration: underline;
 }
 
 img {
@@ -37,8 +48,19 @@ img {
   object-fit: cover;
 }
 
-.text--center {
-  text-align: center;
+button {
+  cursor: pointer;
+  background-color: white;
+  padding: 10px 20px;
+  color: #fc4b00;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  font-weight: 900;
+}
+
+button:hover {
+  outline: #fc4b00 solid 4px;
 }
 
 .container {
@@ -47,7 +69,14 @@ img {
   margin-inline: auto;
 }
 
-// Alles hierboven al gebruikt in codepen
+.flex {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Alles hierboven al gebruikt in codepen */
 
 .spel {
   height: 100vh;
@@ -61,10 +90,6 @@ img {
   display: none;
 }
 
-.rel {
-  position: relative;
-}
-
 .speelveld {
   display: flex;
   justify-content: center;
@@ -76,10 +101,6 @@ img {
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-.speler__naam {
-  margin-bottom: 0;
 }
 
 .speler__levens {
@@ -109,45 +130,34 @@ img {
 
 .speler__keuze__afbeelding {
   min-width: 100px;
+  max-width: 250px;
   min-height: 100px;
+  max-width: 250px;
 }
 
 .versus {
   font-size: 50px;
   font-weight: 900;
-  margin-top: 100px;
 }
 
 .keuze-wrapper {
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.wapens {
+  font-weight: 700;
+  margin-bottom: 20px;
 }
 
 .keuzes {
   display: flex;
   justify-content: center;
   gap: 20px;
-}
-
-button {
-  cursor: pointer;
-  border-radius: 8px;
-  border: none;
-  outline: none;
-  padding: 8px;
-}
-
-button:hover {
-  outline: #fc4b00 solid 4px;
-}
-
-.btnReset {
-  background-color: white;
-  color: #fc4b00;
-  font-weight: 900;
-  font-size: 20px;
-  padding: 10px 20px;
-  margin: 0 20px;
-  border-radius: 8px;
 }
 
 span {
@@ -170,17 +180,4 @@ span {
 
 .img__tutorial {
   height: 400px;
-}
-
-h2 {
-  text-align: left;
-  font-size: 30px;
-  text-transform: uppercase;
-  text-decoration: underline;
-}
-
-a {
-  text-decoration: none;
-  color: #49ff7f;
-  text-decoration: underline;
 }
