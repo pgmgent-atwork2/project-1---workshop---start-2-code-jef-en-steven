@@ -13,70 +13,390 @@
     <main class="container">
       <div class="tutorial">
         <article>
+          <h2>Voor we van start kunnen gaan...</h2>
+          <h3>
+            Voorbereiding 1: Visual Studio Code installeren en mappenstructuur
+            downloaden
+          </h3>
+          <p>
+            Download VSC via
+            <a href="https://code.visualstudio.com/download">deze link</a>. VSC
+            of Visual Studio Code is een teksteditor die specifiek ontworpen is
+            voor het bewerken van de broncode van computerprogramma's door
+            programmeurs, hiermee gaan we dus werken!
+          </p>
+          <img src="img/vsc.png" alt="vsc" class="img__tutorial" />
+          <h3>
+            Voorbereiding 2: Download de mappenstructuur via
+            <a href="https://placeholder.com">deze link</a>
+          </h3>
+          <p>
+            Deze mappenstructuur bevat de basis voor het maken van een website.
+            De mappenstructuur bevat de volgende mappen:
+          </p>
+          <ul>
+            <li>css</li>
+            <li>img</li>
+            <li>js</li>
+          </ul>
+          <h3>Voorbereiding 3: Installeer de live server extensie</h3>
+          <p>
+            De live server extensie zorgt ervoor dat je de website kan bekijken
+            in je browser. Dit is handig omdat je dan direct kan zien of de code
+            die je schrijft werkt.
+          </p>
+          <img
+            src="img/live-server.png"
+            alt="live-server"
+            class="img__tutorial"
+          />
+          <p>
+            Start de live server door rechtsonder de blauwe balk te klikken op
+            "Go Live", je standaard browser zal nu gestart worden!
+          </p>
+
+          <h3>1.4 Open de mappenstructuur in VSC</h3>
+          <p>
+            Nu kan je terug naar je startpagina in VSC, daar staat onder "start"
+            het icoontje van een mapje met de tekst "open". Klik hier nu op en
+            selecteer de gedownloadde mappenstructuur vanaf de locatie waarop je
+            hem hebt opgeslagen.
+          </p>
+        </article>
+        <article>
           <h2>Stap 1: !</h2>
-          <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/embedded/html/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <p>
+            Zet de structuur van je HTML klaar. Dit is als het ware je
+            vertrekpunt, het skelet waarmee we aan de slag kunnen gaan. Voeg bij
+            "title" ook ineens een titel toe, bijvoorbeeld: "Leren Coderen -
+            Blad, Steen, Schaar".
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/embedded/html/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
         <article>
           <h2>Stap 2: Voeg extra code toe</h2>
-          <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/4/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <p>
+            Als je nu gaat kijken via de live extentie, dan zie je dat je pagina
+            al werkende is.
+          </p>
+          <p>
+            De volgende stap is nu om onze CSS (de stijl) en de JavaScript
+            (functionaliteit van onze game) toe te voegen. We doen dit door de
+            script.js en style.css de linken aan ons HTML-bestand.
+          </p>
+          <p>
+            Wanneer je dat gedaan hebt voegen we ook een container toe waarin we
+            ons spel gaan zetten. Gevolgd door een bijhorende titel
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/4/embedded/html,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
         <article>
           <h2>Stap 3: Voeg wat CSS toe</h2>
-          <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/6/embedded/css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <p>
+            Voila, onze basis staat er! Enkel ziet er nog niet zo mooi uit. We
+            gaan wat styling toepassen!
+          </p>
+          <p>
+            We voegen een achtergrondkleur toe, stylen onze lettertype qua
+            grootte, vorm, kleur enzovoort. Probeer eventueel zelf om wat dingen
+            zelf aan te passen om te zien wat je krijgt als resultaat. Zo kan je
+            met groottes van lettertypes (in px) of met de kleur van je
+            achtergrond spelen.
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/6/embedded/css,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
         <article>
-            <h2>Stap 4: Voeg de spelers toe</h2>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/9/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <h2>Stap 4: Voeg de spelers toe</h2>
+          <p>Wat is een spel zonder spelers? We voegen ze gelijk toe!</p>
+          <p>
+            We voegen spelers toe aan de hand van zogenaamde "divs". We geven ze
+            een class mee zodat we ze kunnen stylen en id. De id voor
+            JavaScript!
+          </p>
+          <blockquote>
+            <h4>Wat is een div?</h4>
+            <p>
+              Het DIV element is een voorbeeld van een HTML element. Met dit
+              element kun je een onderdeel van je pagina insluiten en precies
+              daar positioneren waar jij wilt. Dat zie je eigenlijk al aan de
+              naam van het DIV element: 'DIV' is afgeleid van 'division', wat
+              'verdeling' betekent.
+            </p>
+          </blockquote>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/9/embedded/html,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
         <article>
-            <h2>Stap 5: Voeg de keuzes toe</h2>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/11/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <h2>Stap 5: Voeg de keuzes toe</h2>
+          <p>
+            De volgende stap is de keuzes toevoegen tussen blad, steen of
+            schaar. Aangezien we er later op moeten klikken, maken we gebruik
+            van "knoppen" of "buttons"
+          </p>
+          <p>
+            Ook hier zie je dat er weer classes worden gebruikt voor de stijl en
+            id's voor de functionaliteit als we straks echt beginnen
+            programmeren.
+          </p>
+          <blockquote>
+            <h4>Zijn we nu nog niet aan het programmeren dan?</h4>
+            <p>
+              coderen is het omzetten van instructies in code. Coderen kan ook
+              verwijzen naar het proces van het creëren van een ontwerp of
+              lay-out (CSS, HTML)voor een website of applicatie. terwijl
+              programmeren gaat over het bedenken van de logica (JavaScript) van
+              een programma en het schrijven van code om die logica uit te
+              voeren. Hoewel deze termen vaak door elkaar worden gebruikt, is
+              het belangrijk om te onthouden dat ze niet precies hetzelfde
+              betekenen en dat ze in verschillende contexten kunnen worden
+              gebruikt.
+            </p>
+          </blockquote>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/11/embedded/html,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
         <article>
-            <h2>Stap 6: Voeg de gepaste CSS toe</h2>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/14/embedded/css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <h2>Stap 6: Voeg de gepaste CSS toe</h2>
+          <p>
+            Tijd om onze classes te gebruiken, pas volgende code toe om alles
+            weer wat mooier te maken. Goed om te weten: als je een class wilt
+            stijlen in CSS, dan zet je er een "." voor!
+          </p>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/14/embedded/css,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
         <article>
-            <h2>Stap 7: Het spel laten werken</h2>
-            <h3>Javascript</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/17/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Elementen aanspreken</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/19/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Levens aanspreken</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/22/embedded/js/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Levens tonen</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/25/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Toon afbeeldingen wanneer op een knop geklikt wordt</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/31/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Er gebeurde nog niks? We moeten de functie nog toepassen wanneer we op de corresponderende knop klikken</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/33/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Ga het gevecht aan, doe iets met he blad, de steen of de schaar</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/35/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Opnieuw zien we nog geen resultaat aangezien we de functie moeten oproepen, dit doen we in onze 'vooruitgang' functie</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/37/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>We zien geen feedback? Dat komt omdat we nu de levens moeten updaten met dezelfde functie die we in het begin gebruikten.</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/40/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Om aan te tonen wie er wint, voegen we eerst nog een aantal elementen toe aan ons HTML en ook wat styling in onze CSS</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/54/embedded/html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Daarna passen we een nieuwe functie toe om aan te tonen wie gewonnen is</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/57/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Opnieuw, het werkt niet? Jawel, maar we moeten deze controle ook in onze vooruitgang steken.</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/59/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>Een nieuw spel starten? We voegen eerst een knop toe hiervoor aan ons spel</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/61/embedded/html,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>We moeten eerst de knop aanspreken en voegen ook nog 2 variabelen toe om gemakkelijk hetzelfde aantal levens te gebruiken</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/63/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>We voegen de reset functie toe</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/71/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
-            <h3>En natuurlijk moeten we de functie aan de knop koppelen</h3>
-            <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/69/embedded/js,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <h2>Stap 7: Het spel laten werken</h2>
+          <h3>Javascript</h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/17/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>Elementen aanspreken</h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/19/embedded/js/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>Levens aanspreken</h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/22/embedded/js/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>Levens tonen</h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/25/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>Toon afbeeldingen wanneer op een knop geklikt wordt</h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/31/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            Er gebeurde nog niks? We moeten de functie nog toepassen wanneer we
+            op de corresponderende knop klikken
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/33/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            Ga het gevecht aan, doe iets met he blad, de steen of de schaar
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/35/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            Opnieuw zien we nog geen resultaat aangezien we de functie moeten
+            oproepen, dit doen we in onze 'vooruitgang' functie
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/37/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            We zien geen feedback? Dat komt omdat we nu de levens moeten updaten
+            met dezelfde functie die we in het begin gebruikten.
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/40/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            Om aan te tonen wie er wint, voegen we eerst nog een aantal
+            elementen toe aan ons HTML en ook wat styling in onze CSS
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/54/embedded/html,css/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            Daarna passen we een nieuwe functie toe om aan te tonen wie gewonnen
+            is
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/57/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            Opnieuw, het werkt niet? Jawel, maar we moeten deze controle ook in
+            onze vooruitgang steken.
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/59/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            Een nieuw spel starten? We voegen eerst een knop toe hiervoor aan
+            ons spel
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/61/embedded/html,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>
+            We moeten eerst de knop aanspreken en voegen ook nog 2 variabelen
+            toe om gemakkelijk hetzelfde aantal levens te gebruiken
+          </h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/63/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>We voegen de reset functie toe</h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/71/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
+          <h3>En natuurlijk moeten we de functie aan de knop koppelen</h3>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/69/embedded/js,result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
         <article>
           <h2>En we zijn klaar.</h2>
           <h3>De finale code</h3>
-          <iframe width="100%" height="300" src="//jsfiddle.net/stevaelb/apqvo47f/69/embedded/js,html,css/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <iframe
+            width="100%"
+            height="300"
+            src="//jsfiddle.net/stevaelb/apqvo47f/69/embedded/js,html,css/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
           <h3>Het finale resultaat</h3>
-          <iframe width="100%" height="500" src="//jsfiddle.net/stevaelb/apqvo47f/69/embedded/result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+          <iframe
+            width="100%"
+            height="500"
+            src="//jsfiddle.net/stevaelb/apqvo47f/69/embedded/result/dark/"
+            allowfullscreen="allowfullscreen"
+            allowpaymentrequest
+            frameborder="0"
+          ></iframe>
         </article>
       </div>
     </main>

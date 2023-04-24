@@ -9,3 +9,25 @@
 .img__tutorial {
   height: 400px;
 }
+
+h2,
+h3 {
+  margin: 20px 0;
+}
+
+code {
+  color: white;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 15px solid orange;
+  padding: 1.5rem;
+  margin: 2rem 0;
+  background-color: #f7f7f7;
+  color: orange;
+  font-size: 25px;
+  font-family: "Helvetica Neue", sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
