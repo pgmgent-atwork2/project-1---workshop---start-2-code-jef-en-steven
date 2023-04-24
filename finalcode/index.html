@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leren Coderen - Blad, Steen, Schaar</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <div class="container">
+
+      <div class="spel">
+
+        <h1>Blad, Steen, Schaar <span id="vuur">🔥</span></h1>
+        <!-- Het speelveld -->
+        <div id="speelveld" class="speelveld">
+          <!-- De speler -->
+          <div id="speler" class="speler">
+            <h2 id="speler_naam">Speler</h2> <!-- Hier kan je je eigen naam invullen -->
+            <div id="speler_keuze" class="keuze"></div>
+            <div id="speler_levens" class="levens"></div>
+          </div>
+          <!-- Versus -->
+          <p class="versus">VS</p>
+          <!-- De computer -->
+          <div id="computer" class="speler">
+            <h2 id="computer_naam">Computer</h2>
+            <div id="computer_keuze" class="keuze"></div>
+            <div id="computer_levens" class="levens"></div>
+          </div>
+        </div>
+
+        <!-- BLAD - STEEN - SCHAAR -->
+        <div id="blad_steen_schaar" class="blad-steen-schaar">
+          <h2>KIES JE WAPEN</h2>
+          <div id="keuzes">
+            <button id="keuze_blad">🍃 BLAD</button>
+            <button id="keuze_steen">🪨 STEEN</button>
+            <button id="keuze_schaar">✂️ SCHAAR</button>
+          </div>
+          <button id="reset_knop">Reset</button>
+        </div>
+
+      </div>
+
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+
+</html>

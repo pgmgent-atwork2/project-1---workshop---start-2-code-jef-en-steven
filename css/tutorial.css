@@ -1,0 +1,11 @@
+/* Tutorial CSS */
+
+.tutorial {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.img__tutorial {
+  height: 400px;
+}
