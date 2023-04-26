@@ -24,4 +24,4 @@ Basic JavaScript is used to make the game functional.
 
 ## Credits
 
-Jef De Niel en Steven Aelbrecht
+Steven Aelbrecht en Jef De Niel
